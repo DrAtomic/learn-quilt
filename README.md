@@ -23,12 +23,37 @@ the makefile simply
 # usage
 clone this repo
 
-check the original hello.c file
+check the original hello.c file by `cat hello.c`
+```c
+#include <stdio.h>
 
-in the directory just run `make`
+int main(void){
+  printf("\nhello world\n");
+  return 0;
+};
+```
 
-you'll notice what is described above
+in the directory just run `make` it'll say
+```terminal
+running original hello
 
-check the hello.c after the patch is applied
+hello world
+Applying patch patches/hello.patch
+patching file hello.c
 
-lastly run a `make clean` to revert to original 
+Now at patch patches/hello.patch
+running patched hello
+
+goodbye world
+```
+check the hello.c after the patch is applied `cat hello.c`
+```
+#include <stdio.h>
+
+int main(void){
+  printf("\ngoodbye world\n");
+  return 0;
+};
+```
+
+lastly run a `make clean` to revert to original and check the hello.c file like before
