@@ -1,0 +1,12 @@
+diff --git a/hello.c b/hello.c
+index b29a972..fcf1f21 100644
+--- a/hello.c
++++ b/hello.c
+@@ -1,6 +1,6 @@
+ #include <stdio.h>
+ 
+ int main(void){
+-  printf("\nhello world\n");
++  printf("\ngoodbye world\n");
+   return 0;
+ };
