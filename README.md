@@ -47,7 +47,7 @@ running patched hello
 goodbye world
 ```
 check the hello.c after the patch is applied `cat hello.c`
-```
+```c
 #include <stdio.h>
 
 int main(void){
